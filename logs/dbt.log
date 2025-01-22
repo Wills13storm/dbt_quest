@@ -1,0 +1,807 @@
+[0m10:28:45.329359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002611978BF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002611E1BF860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002611E1BE8A0>]}
+
+
+============================== 10:28:45.383729 | 1f1f4016-363b-4356-8d6f-3072d701651c ==============================
+[0m10:28:45.383729 [info ] [MainThread]: Running with dbt=1.7.9
+[0m10:28:45.383729 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\willi\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\willi\\dbt_quest\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:28:46.072450 [error] [MainThread]: Encountered an error:
+No module named 'pandas'
+[0m10:28:46.081707 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 169, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 191, in wrapper
+    set_up_plugin_manager(project_name=project.project_name)
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\plugins\__init__.py", line 14, in set_up_plugin_manager
+    PLUGIN_MANAGER = PluginManager.from_modules(project_name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\plugins\manager.py", line 95, in from_modules
+    name: importlib.import_module(name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\willi\my-dbt-env\dbt_quest.py", line 1, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+
+[0m10:28:46.088730 [debug] [MainThread]: Command `dbt run` failed at 10:28:46.088730 after 1.04 seconds
+[0m10:28:46.088730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002611978BF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002611E0BBB30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002611E9DE570>]}
+[0m10:28:46.088730 [debug] [MainThread]: Flushing usage events
+[0m10:29:53.819132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017A6F9CDA00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017A6F8C4140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017A6F8C7920>]}
+
+
+============================== 10:29:53.833971 | d4d21f07-be3a-4421-b919-bdf3804cedcf ==============================
+[0m10:29:53.833971 [info ] [MainThread]: Running with dbt=1.7.9
+[0m10:29:53.835494 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\willi\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\willi\\dbt_quest\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:29:56.586812 [error] [MainThread]: Encountered an error:
+No module named 'sqlalchemy'
+[0m10:29:56.595654 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 169, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 191, in wrapper
+    set_up_plugin_manager(project_name=project.project_name)
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\plugins\__init__.py", line 14, in set_up_plugin_manager
+    PLUGIN_MANAGER = PluginManager.from_modules(project_name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\plugins\manager.py", line 95, in from_modules
+    name: importlib.import_module(name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\willi\my-dbt-env\dbt_quest.py", line 2, in <module>
+    from sqlalchemy import create_engine
+ModuleNotFoundError: No module named 'sqlalchemy'
+
+[0m10:29:56.599411 [debug] [MainThread]: Command `dbt run` failed at 10:29:56.599411 after 3.03 seconds
+[0m10:29:56.599411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017A6F553470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017A6F768230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017A7F5B1B80>]}
+[0m10:29:56.602046 [debug] [MainThread]: Flushing usage events
+[0m10:31:36.464959 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214F9C5C980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214F9C5C5C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214F9C5CEF0>]}
+
+
+============================== 10:31:36.472989 | 5f10eede-d7cb-43e0-8ef4-bc04bda0a61e ==============================
+[0m10:31:36.472989 [info ] [MainThread]: Running with dbt=1.7.9
+[0m10:31:36.475097 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\willi\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\willi\\dbt_quest\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:31:38.431937 [error] [MainThread]: Encountered an error:
+No module named 'sqlalchemy_utils'
+[0m10:31:38.440153 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 169, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 191, in wrapper
+    set_up_plugin_manager(project_name=project.project_name)
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\plugins\__init__.py", line 14, in set_up_plugin_manager
+    PLUGIN_MANAGER = PluginManager.from_modules(project_name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\plugins\manager.py", line 95, in from_modules
+    name: importlib.import_module(name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\willi\my-dbt-env\dbt_quest.py", line 3, in <module>
+    from sqlalchemy_utils import database_exists, create_database
+ModuleNotFoundError: No module named 'sqlalchemy_utils'
+
+[0m10:31:38.443385 [debug] [MainThread]: Command `dbt run` failed at 10:31:38.443385 after 2.21 seconds
+[0m10:31:38.444420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214F9AA6A20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002149A09AA20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214FFC47260>]}
+[0m10:31:38.444952 [debug] [MainThread]: Flushing usage events
+[0m10:32:36.118147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246F24A32C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246F235F500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246F2254170>]}
+
+
+============================== 10:32:36.126020 | 3f50a8fb-35cf-4e1f-bf13-c8ebb9e839f3 ==============================
+[0m10:32:36.126020 [info ] [MainThread]: Running with dbt=1.7.9
+[0m10:32:36.127088 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\willi\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\willi\\dbt_quest\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:32:38.616680 [error] [MainThread]: Encountered an error:
+No module named 'pymysql'
+[0m10:32:38.625775 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 169, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 191, in wrapper
+    set_up_plugin_manager(project_name=project.project_name)
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\plugins\__init__.py", line 14, in set_up_plugin_manager
+    PLUGIN_MANAGER = PluginManager.from_modules(project_name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\plugins\manager.py", line 95, in from_modules
+    name: importlib.import_module(name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\willi\my-dbt-env\dbt_quest.py", line 19, in <module>
+    engine = create_engine(DATABASE_URI)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in create_engine
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\util\deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\engine\create.py", line 602, in create_engine
+    dbapi = dbapi_meth(**dbapi_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\dialects\mysql\pymysql.py", line 74, in import_dbapi
+    return __import__("pymysql")
+           ^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'pymysql'
+
+[0m10:32:38.629170 [debug] [MainThread]: Command `dbt run` failed at 10:32:38.629170 after 2.76 seconds
+[0m10:32:38.629170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246930E1AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246935829F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246FF37A180>]}
+[0m10:32:38.629170 [debug] [MainThread]: Flushing usage events
+[0m10:33:26.374894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002159D81FC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002159D81E6C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002159D81EF60>]}
+
+
+============================== 10:33:26.374894 | 74c7303b-c74d-4ef2-8cc3-cf0b245d2105 ==============================
+[0m10:33:26.374894 [info ] [MainThread]: Running with dbt=1.7.9
+[0m10:33:26.374894 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\willi\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\willi\\dbt_quest\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:33:32.351033 [error] [MainThread]: Encountered an error:
+(pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[0m10:33:32.375549 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\pymysql\connections.py", line 649, in connect
+    sock = socket.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 865, in create_connection
+    raise exceptions[0]
+  File "C:\Users\willi\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 850, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\engine\base.py", line 3298, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\impl.py", line 179, in _do_get
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 390, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 674, in __init__
+    self.__connect()
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\engine\create.py", line 646, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\engine\default.py", line 622, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\pymysql\connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 169, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 191, in wrapper
+    set_up_plugin_manager(project_name=project.project_name)
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\plugins\__init__.py", line 14, in set_up_plugin_manager
+    PLUGIN_MANAGER = PluginManager.from_modules(project_name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\plugins\manager.py", line 95, in from_modules
+    name: importlib.import_module(name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\willi\my-dbt-env\dbt_quest.py", line 22, in <module>
+    with engine.connect() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\engine\base.py", line 3274, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\engine\base.py", line 148, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\engine\base.py", line 2439, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\engine\base.py", line 3298, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\impl.py", line 179, in _do_get
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 390, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 674, in __init__
+    self.__connect()
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\engine\create.py", line 646, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\engine\default.py", line 622, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\pymysql\connections.py", line 716, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+[0m10:33:32.383412 [debug] [MainThread]: Command `dbt run` failed at 10:33:32.382303 after 6.23 seconds
+[0m10:33:32.384446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002159D81DBB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215BFD656A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215BFE6A780>]}
+[0m10:33:32.384446 [debug] [MainThread]: Flushing usage events
+[0m10:39:10.027944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001508E024170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001508E192630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001508E1922D0>]}
+
+
+============================== 10:39:10.036406 | 2d7742e1-12d8-499d-87e8-cae8e717ef15 ==============================
+[0m10:39:10.036406 [info ] [MainThread]: Running with dbt=1.7.9
+[0m10:39:10.038290 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\willi\\.dbt', 'log_path': 'C:\\Users\\willi\\dbt_quest\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:39:12.219779 [error] [MainThread]: Encountered an error:
+'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[0m10:39:12.236880 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 169, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\cli\requires.py", line 191, in wrapper
+    set_up_plugin_manager(project_name=project.project_name)
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\plugins\__init__.py", line 14, in set_up_plugin_manager
+    PLUGIN_MANAGER = PluginManager.from_modules(project_name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\dbt\plugins\manager.py", line 95, in from_modules
+    name: importlib.import_module(name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\willi\my-dbt-env\dbt_quest.py", line 22, in <module>
+    with engine.connect() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\engine\base.py", line 3274, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\engine\base.py", line 3298, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\impl.py", line 179, in _do_get
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 390, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 674, in __init__
+    self.__connect()
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\engine\create.py", line 646, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\sqlalchemy\engine\default.py", line 622, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\pymysql\connections.py", line 669, in connect
+    self._request_authentication()
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\pymysql\connections.py", line 979, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    data = sha2_rsa_encrypt(conn.password, conn.salt, conn.server_public_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willi\my-dbt-env\Lib\site-packages\pymysql\_auth.py", line 144, in sha2_rsa_encrypt
+    raise RuntimeError(
+RuntimeError: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+
+[0m10:39:12.241500 [debug] [MainThread]: Command `dbt run` failed at 10:39:12.241500 after 2.49 seconds
+[0m10:39:12.241500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001508E025460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000150AE54FC20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000150B07D39B0>]}
+[0m10:39:12.241500 [debug] [MainThread]: Flushing usage events
+[0m10:41:43.242009 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C61A2CC620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C61A2CE840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C61A2CD4C0>]}
+
+
+============================== 10:41:43.242009 | b930e1a6-a31a-4bb9-8ec3-cb0a55132b90 ==============================
+[0m10:41:43.242009 [info ] [MainThread]: Running with dbt=1.7.9
+[0m10:41:43.251285 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\willi\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\willi\\dbt_quest\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:41:54.756176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b930e1a6-a31a-4bb9-8ec3-cb0a55132b90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C63CAEB260>]}
+[0m10:41:54.940912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b930e1a6-a31a-4bb9-8ec3-cb0a55132b90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C63C9FA330>]}
+[0m10:41:54.944964 [info ] [MainThread]: Registered adapter: mariadb=1.7.0
+[0m10:41:54.961623 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m10:41:54.961623 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:41:54.969147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b930e1a6-a31a-4bb9-8ec3-cb0a55132b90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C61AB0BCB0>]}
+[0m10:41:57.222870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b930e1a6-a31a-4bb9-8ec3-cb0a55132b90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C63DCA86E0>]}
+[0m10:41:57.241097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b930e1a6-a31a-4bb9-8ec3-cb0a55132b90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C61A2CEE40>]}
+[0m10:41:57.244949 [info ] [MainThread]: Found 1 model, 1 source, 0 exposures, 0 metrics, 377 macros, 0 groups, 0 semantic models
+[0m10:41:57.244949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b930e1a6-a31a-4bb9-8ec3-cb0a55132b90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C63DC86630>]}
+[0m10:41:57.249547 [info ] [MainThread]: 
+[0m10:41:57.251673 [debug] [MainThread]: Acquiring new mariadb connection 'master'
+[0m10:41:57.252210 [debug] [ThreadPool]: Acquiring new mariadb connection 'list_schemas'
+[0m10:41:57.275529 [debug] [ThreadPool]: Using mariadb connection "list_schemas"
+[0m10:41:57.276075 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "dbt_quest", "target_name": "dev", "connection_name": "list_schemas"} */
+select distinct schema_name
+        from information_schema.schemata
+[0m10:41:57.277223 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:41:57.364834 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 0.0 seconds
+[0m10:41:57.364834 [debug] [ThreadPool]: On list_schemas: Close
+[0m10:41:57.374515 [debug] [ThreadPool]: Acquiring new mariadb connection 'list_None_my_dbt_db'
+[0m10:41:57.379947 [debug] [ThreadPool]: Using mariadb connection "list_None_my_dbt_db"
+[0m10:41:57.379947 [debug] [ThreadPool]: On list_None_my_dbt_db: BEGIN
+[0m10:41:57.379947 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:41:57.396336 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m10:41:57.403614 [debug] [ThreadPool]: Using mariadb connection "list_None_my_dbt_db"
+[0m10:41:57.404639 [debug] [ThreadPool]: On list_None_my_dbt_db: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "dbt_quest", "target_name": "dev", "connection_name": "list_None_my_dbt_db"} */
+select
+      null as "database",
+      table_name as name,
+      table_schema as "schema",
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type
+      end as table_type
+    from information_schema.tables
+    where table_schema = 'my_dbt_db'
+  
+[0m10:41:57.407878 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.0 seconds
+[0m10:41:57.415068 [debug] [ThreadPool]: On list_None_my_dbt_db: ROLLBACK
+[0m10:41:57.416217 [debug] [ThreadPool]: On list_None_my_dbt_db: Close
+[0m10:41:57.421270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b930e1a6-a31a-4bb9-8ec3-cb0a55132b90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C61AB37170>]}
+[0m10:41:57.424799 [debug] [MainThread]: Using mariadb connection "master"
+[0m10:41:57.424799 [debug] [MainThread]: On master: BEGIN
+[0m10:41:57.424799 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:41:57.443541 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m10:41:57.443541 [debug] [MainThread]: On master: COMMIT
+[0m10:41:57.445573 [debug] [MainThread]: Using mariadb connection "master"
+[0m10:41:57.447465 [debug] [MainThread]: On master: COMMIT
+[0m10:41:57.447465 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m10:41:57.451716 [debug] [MainThread]: On master: Close
+[0m10:41:57.455323 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:41:57.456591 [info ] [MainThread]: 
+[0m10:41:57.489522 [debug] [Thread-1 (]: Began running node model.dbt_quest.stg_customers
+[0m10:41:57.491457 [info ] [Thread-1 (]: 1 of 1 START sql view model my_dbt_db.stg_customers ............................ [RUN]
+[0m10:41:57.494303 [debug] [Thread-1 (]: Acquiring new mariadb connection 'model.dbt_quest.stg_customers'
+[0m10:41:57.495683 [debug] [Thread-1 (]: Began compiling node model.dbt_quest.stg_customers
+[0m10:41:57.510219 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_quest.stg_customers"
+[0m10:41:57.510219 [debug] [Thread-1 (]: Timing info for model.dbt_quest.stg_customers (compile): 10:41:57.495683 => 10:41:57.510219
+[0m10:41:57.516858 [debug] [Thread-1 (]: Began executing node model.dbt_quest.stg_customers
+[0m10:41:57.585620 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_quest.stg_customers"
+[0m10:41:57.589315 [debug] [Thread-1 (]: Using mariadb connection "model.dbt_quest.stg_customers"
+[0m10:41:57.589601 [debug] [Thread-1 (]: On model.dbt_quest.stg_customers: BEGIN
+[0m10:41:57.590646 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:41:57.601158 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m10:41:57.601158 [debug] [Thread-1 (]: Using mariadb connection "model.dbt_quest.stg_customers"
+[0m10:41:57.601158 [debug] [Thread-1 (]: On model.dbt_quest.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "dbt_quest", "target_name": "dev", "node_id": "model.dbt_quest.stg_customers"} */
+
+  create view `my_dbt_db`.`stg_customers__dbt_tmp`
+  
+  
+  as
+    with source as (
+    select * from `my_dbt_db`.`raw_customers`
+),
+renamed as (
+    select
+        id as customer_id,
+        name as customer_name
+    from source
+)
+select * from renamed
+[0m10:41:57.624147 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m10:41:57.632898 [debug] [Thread-1 (]: Using mariadb connection "model.dbt_quest.stg_customers"
+[0m10:41:57.637332 [debug] [Thread-1 (]: On model.dbt_quest.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "dbt_quest", "target_name": "dev", "node_id": "model.dbt_quest.stg_customers"} */
+
+    drop view if exists `my_dbt_db`.`stg_customers` cascade
+  
+[0m10:41:57.641507 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m10:41:57.641507 [debug] [Thread-1 (]: Using mariadb connection "model.dbt_quest.stg_customers"
+[0m10:41:57.641507 [debug] [Thread-1 (]: On model.dbt_quest.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "dbt_quest", "target_name": "dev", "node_id": "model.dbt_quest.stg_customers"} */
+
+    rename table `my_dbt_db`.`stg_customers__dbt_tmp` to `my_dbt_db`.`stg_customers`
+  
+[0m10:41:57.651542 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m10:41:57.683945 [debug] [Thread-1 (]: On model.dbt_quest.stg_customers: COMMIT
+[0m10:41:57.683945 [debug] [Thread-1 (]: Using mariadb connection "model.dbt_quest.stg_customers"
+[0m10:41:57.683945 [debug] [Thread-1 (]: On model.dbt_quest.stg_customers: COMMIT
+[0m10:41:57.689347 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m10:41:57.697419 [debug] [Thread-1 (]: Using mariadb connection "model.dbt_quest.stg_customers"
+[0m10:41:57.697419 [debug] [Thread-1 (]: On model.dbt_quest.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "dbt_quest", "target_name": "dev", "node_id": "model.dbt_quest.stg_customers"} */
+drop view if exists `my_dbt_db`.`stg_customers__dbt_backup`
+[0m10:41:57.707257 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m10:41:57.713778 [debug] [Thread-1 (]: Timing info for model.dbt_quest.stg_customers (execute): 10:41:57.517375 => 10:41:57.713778
+[0m10:41:57.713778 [debug] [Thread-1 (]: On model.dbt_quest.stg_customers: Close
+[0m10:41:57.713778 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b930e1a6-a31a-4bb9-8ec3-cb0a55132b90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C63D682F90>]}
+[0m10:41:57.721797 [info ] [Thread-1 (]: 1 of 1 OK created sql view model my_dbt_db.stg_customers ....................... [[32mSUCCESS 0[0m in 0.22s]
+[0m10:41:57.725219 [debug] [Thread-1 (]: Finished running node model.dbt_quest.stg_customers
+[0m10:41:57.728426 [debug] [MainThread]: Using mariadb connection "master"
+[0m10:41:57.729950 [debug] [MainThread]: On master: BEGIN
+[0m10:41:57.729950 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:41:57.746374 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m10:41:57.747528 [debug] [MainThread]: On master: COMMIT
+[0m10:41:57.747528 [debug] [MainThread]: Using mariadb connection "master"
+[0m10:41:57.747528 [debug] [MainThread]: On master: COMMIT
+[0m10:41:57.747528 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m10:41:57.747528 [debug] [MainThread]: On master: Close
+[0m10:41:57.755606 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:41:57.756401 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+[0m10:41:57.756401 [debug] [MainThread]: Connection 'list_None_my_dbt_db' was properly closed.
+[0m10:41:57.756401 [debug] [MainThread]: Connection 'model.dbt_quest.stg_customers' was properly closed.
+[0m10:41:57.758691 [info ] [MainThread]: 
+[0m10:41:57.758691 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.51 seconds (0.51s).
+[0m10:41:57.762924 [debug] [MainThread]: Command end result
+[0m10:41:57.779384 [info ] [MainThread]: 
+[0m10:41:57.779384 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:41:57.785804 [info ] [MainThread]: 
+[0m10:41:57.787161 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m10:41:57.791614 [debug] [MainThread]: Command `dbt run` succeeded at 10:41:57.791614 after 14.78 seconds
+[0m10:41:57.793080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C61983E840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C619E531A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C61A2A2390>]}
+[0m10:41:57.794401 [debug] [MainThread]: Flushing usage events
+[0m12:00:56.815141 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BED08C620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BEE20DD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BEE20EBD0>]}
+
+
+============================== 12:00:56.817632 | 71de129c-5612-47ea-9604-899a6e0434e6 ==============================
+[0m12:00:56.817632 [info ] [MainThread]: Running with dbt=1.7.9
+[0m12:00:56.826572 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\willi\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\willi\\dbt_quest\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:01:08.963961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '71de129c-5612-47ea-9604-899a6e0434e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013B909E2E70>]}
+[0m12:01:09.136473 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '71de129c-5612-47ea-9604-899a6e0434e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BEE1E36E0>]}
+[0m12:01:09.138745 [info ] [MainThread]: Registered adapter: mariadb=1.7.0
+[0m12:01:09.161389 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m12:01:09.293839 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 1 files changed.
+[0m12:01:09.303447 [debug] [MainThread]: Partial parsing: added file: dbt_quest://models\staging\stg_orders.yml
+[0m12:01:09.303979 [debug] [MainThread]: Partial parsing: added file: dbt_quest://models\staging\stg_orders.sql
+[0m12:01:09.303979 [debug] [MainThread]: Partial parsing: updated file: dbt_quest://models\staging\sources.yml
+[0m12:01:09.658758 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two schema.yml entries for the same resource named stg_customers. Resources and their associated columns may only be described a single time. To fix this, remove the resource entry for stg_customers in one of these files:
+   - models\staging\stg_customers.yml
+  models\staging\stg_orders.yml
+[0m12:01:09.658758 [debug] [MainThread]: Command `dbt run` failed at 12:01:09.658758 after 13.08 seconds
+[0m12:01:09.658758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BEDF901D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BED263290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BEEA208C0>]}
+[0m12:01:09.658758 [debug] [MainThread]: Flushing usage events
+[0m12:07:03.868130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D8D28DBDA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D8D2693F20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D8D28DB830>]}
+
+
+============================== 12:07:03.876201 | 6426e263-55ce-45ba-a45e-d9b62e421881 ==============================
+[0m12:07:03.876201 [info ] [MainThread]: Running with dbt=1.7.9
+[0m12:07:03.876201 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\willi\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\willi\\dbt_quest\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:07:14.822240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6426e263-55ce-45ba-a45e-d9b62e421881', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D8F50E3230>]}
+[0m12:07:15.020018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6426e263-55ce-45ba-a45e-d9b62e421881', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D8F4CBFB30>]}
+[0m12:07:15.025076 [info ] [MainThread]: Registered adapter: mariadb=1.7.0
+[0m12:07:15.041637 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m12:07:15.171134 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 1 files changed.
+[0m12:07:15.171134 [debug] [MainThread]: Partial parsing: added file: dbt_quest://models\staging\stg_orders.yml
+[0m12:07:15.171134 [debug] [MainThread]: Partial parsing: added file: dbt_quest://models\staging\stg_orders.sql
+[0m12:07:15.179513 [debug] [MainThread]: Partial parsing: updated file: dbt_quest://models\staging\sources.yml
+[0m12:07:15.715736 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6426e263-55ce-45ba-a45e-d9b62e421881', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D8F5B1F8F0>]}
+[0m12:07:15.732078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6426e263-55ce-45ba-a45e-d9b62e421881', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D8F62446E0>]}
+[0m12:07:15.734553 [info ] [MainThread]: Found 2 models, 2 sources, 0 exposures, 0 metrics, 377 macros, 0 groups, 0 semantic models
+[0m12:07:15.736598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6426e263-55ce-45ba-a45e-d9b62e421881', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D8D29344D0>]}
+[0m12:07:15.740306 [info ] [MainThread]: 
+[0m12:07:15.740306 [debug] [MainThread]: Acquiring new mariadb connection 'master'
+[0m12:07:15.740306 [debug] [ThreadPool]: Acquiring new mariadb connection 'list_schemas'
+[0m12:07:15.762865 [debug] [ThreadPool]: Using mariadb connection "list_schemas"
+[0m12:07:15.762865 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "dbt_quest", "target_name": "dev", "connection_name": "list_schemas"} */
+select distinct schema_name
+        from information_schema.schemata
+[0m12:07:15.768659 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:07:15.795712 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 0.0 seconds
+[0m12:07:15.803284 [debug] [ThreadPool]: On list_schemas: Close
+[0m12:07:15.807704 [debug] [ThreadPool]: Acquiring new mariadb connection 'list_None_my_dbt_db'
+[0m12:07:15.817713 [debug] [ThreadPool]: Using mariadb connection "list_None_my_dbt_db"
+[0m12:07:15.818544 [debug] [ThreadPool]: On list_None_my_dbt_db: BEGIN
+[0m12:07:15.819595 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:07:15.834510 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m12:07:15.836028 [debug] [ThreadPool]: Using mariadb connection "list_None_my_dbt_db"
+[0m12:07:15.836028 [debug] [ThreadPool]: On list_None_my_dbt_db: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "dbt_quest", "target_name": "dev", "connection_name": "list_None_my_dbt_db"} */
+select
+      null as "database",
+      table_name as name,
+      table_schema as "schema",
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type
+      end as table_type
+    from information_schema.tables
+    where table_schema = 'my_dbt_db'
+  
+[0m12:07:15.836028 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 0.0 seconds
+[0m12:07:15.844069 [debug] [ThreadPool]: On list_None_my_dbt_db: ROLLBACK
+[0m12:07:15.844069 [debug] [ThreadPool]: On list_None_my_dbt_db: Close
+[0m12:07:15.844069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6426e263-55ce-45ba-a45e-d9b62e421881', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D8F5A417F0>]}
+[0m12:07:15.851993 [debug] [MainThread]: Using mariadb connection "master"
+[0m12:07:15.851993 [debug] [MainThread]: On master: BEGIN
+[0m12:07:15.853592 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:07:15.869406 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m12:07:15.869406 [debug] [MainThread]: On master: COMMIT
+[0m12:07:15.870996 [debug] [MainThread]: Using mariadb connection "master"
+[0m12:07:15.871533 [debug] [MainThread]: On master: COMMIT
+[0m12:07:15.871533 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m12:07:15.871533 [debug] [MainThread]: On master: Close
+[0m12:07:15.871533 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:07:15.877051 [info ] [MainThread]: 
+[0m12:07:15.885743 [debug] [Thread-1 (]: Began running node model.dbt_quest.stg_customers
+[0m12:07:15.885743 [info ] [Thread-1 (]: 1 of 2 START sql view model my_dbt_db.stg_customers ............................ [RUN]
+[0m12:07:15.885743 [debug] [Thread-1 (]: Acquiring new mariadb connection 'model.dbt_quest.stg_customers'
+[0m12:07:15.893747 [debug] [Thread-1 (]: Began compiling node model.dbt_quest.stg_customers
+[0m12:07:15.909628 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_quest.stg_customers"
+[0m12:07:15.909628 [debug] [Thread-1 (]: Timing info for model.dbt_quest.stg_customers (compile): 12:07:15.893747 => 12:07:15.909628
+[0m12:07:15.909628 [debug] [Thread-1 (]: Began executing node model.dbt_quest.stg_customers
+[0m12:07:16.092913 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_quest.stg_customers"
+[0m12:07:16.096905 [debug] [Thread-1 (]: Using mariadb connection "model.dbt_quest.stg_customers"
+[0m12:07:16.096905 [debug] [Thread-1 (]: On model.dbt_quest.stg_customers: BEGIN
+[0m12:07:16.096905 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:07:16.113313 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m12:07:16.115277 [debug] [Thread-1 (]: Using mariadb connection "model.dbt_quest.stg_customers"
+[0m12:07:16.116596 [debug] [Thread-1 (]: On model.dbt_quest.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "dbt_quest", "target_name": "dev", "node_id": "model.dbt_quest.stg_customers"} */
+
+  create view `my_dbt_db`.`stg_customers__dbt_tmp`
+  
+  
+  as
+    with source as (
+    select * from `my_dbt_db`.`raw_customers`
+),
+renamed as (
+    select
+        id as customer_id,
+        name as customer_name
+    from source
+)
+select * from renamed
+[0m12:07:16.126038 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m12:07:16.137847 [debug] [Thread-1 (]: Using mariadb connection "model.dbt_quest.stg_customers"
+[0m12:07:16.137847 [debug] [Thread-1 (]: On model.dbt_quest.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "dbt_quest", "target_name": "dev", "node_id": "model.dbt_quest.stg_customers"} */
+
+    drop view if exists `my_dbt_db`.`stg_customers__dbt_backup` cascade
+  
+[0m12:07:16.146207 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m12:07:16.146207 [debug] [Thread-1 (]: Using mariadb connection "model.dbt_quest.stg_customers"
+[0m12:07:16.146207 [debug] [Thread-1 (]: On model.dbt_quest.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "dbt_quest", "target_name": "dev", "node_id": "model.dbt_quest.stg_customers"} */
+
+    rename table `my_dbt_db`.`stg_customers` to `my_dbt_db`.`stg_customers__dbt_backup`
+  
+[0m12:07:16.156008 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m12:07:16.157910 [debug] [Thread-1 (]: Using mariadb connection "model.dbt_quest.stg_customers"
+[0m12:07:16.162969 [debug] [Thread-1 (]: On model.dbt_quest.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "dbt_quest", "target_name": "dev", "node_id": "model.dbt_quest.stg_customers"} */
+
+    drop view if exists `my_dbt_db`.`stg_customers` cascade
+  
+[0m12:07:16.168695 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m12:07:16.170278 [debug] [Thread-1 (]: Using mariadb connection "model.dbt_quest.stg_customers"
+[0m12:07:16.171315 [debug] [Thread-1 (]: On model.dbt_quest.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "dbt_quest", "target_name": "dev", "node_id": "model.dbt_quest.stg_customers"} */
+
+    rename table `my_dbt_db`.`stg_customers__dbt_tmp` to `my_dbt_db`.`stg_customers`
+  
+[0m12:07:16.177940 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m12:07:16.211429 [debug] [Thread-1 (]: On model.dbt_quest.stg_customers: COMMIT
+[0m12:07:16.211429 [debug] [Thread-1 (]: Using mariadb connection "model.dbt_quest.stg_customers"
+[0m12:07:16.211429 [debug] [Thread-1 (]: On model.dbt_quest.stg_customers: COMMIT
+[0m12:07:16.218622 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m12:07:16.227718 [debug] [Thread-1 (]: Using mariadb connection "model.dbt_quest.stg_customers"
+[0m12:07:16.227718 [debug] [Thread-1 (]: On model.dbt_quest.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "dbt_quest", "target_name": "dev", "node_id": "model.dbt_quest.stg_customers"} */
+drop view if exists `my_dbt_db`.`stg_customers__dbt_backup`
+[0m12:07:16.236859 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m12:07:16.240676 [debug] [Thread-1 (]: Timing info for model.dbt_quest.stg_customers (execute): 12:07:15.909628 => 12:07:16.240676
+[0m12:07:16.240676 [debug] [Thread-1 (]: On model.dbt_quest.stg_customers: Close
+[0m12:07:16.243770 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6426e263-55ce-45ba-a45e-d9b62e421881', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D8F65E3BF0>]}
+[0m12:07:16.243770 [info ] [Thread-1 (]: 1 of 2 OK created sql view model my_dbt_db.stg_customers ....................... [[32mSUCCESS 0[0m in 0.36s]
+[0m12:07:16.243770 [debug] [Thread-1 (]: Finished running node model.dbt_quest.stg_customers
+[0m12:07:16.243770 [debug] [Thread-1 (]: Began running node model.dbt_quest.stg_orders
+[0m12:07:16.250193 [info ] [Thread-1 (]: 2 of 2 START sql view model my_dbt_db.stg_orders ............................... [RUN]
+[0m12:07:16.253216 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_quest.stg_customers, now model.dbt_quest.stg_orders)
+[0m12:07:16.253952 [debug] [Thread-1 (]: Began compiling node model.dbt_quest.stg_orders
+[0m12:07:16.260696 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_quest.stg_orders"
+[0m12:07:16.260696 [debug] [Thread-1 (]: Timing info for model.dbt_quest.stg_orders (compile): 12:07:16.254705 => 12:07:16.260696
+[0m12:07:16.260696 [debug] [Thread-1 (]: Began executing node model.dbt_quest.stg_orders
+[0m12:07:16.274491 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_quest.stg_orders"
+[0m12:07:16.277006 [debug] [Thread-1 (]: Using mariadb connection "model.dbt_quest.stg_orders"
+[0m12:07:16.277006 [debug] [Thread-1 (]: On model.dbt_quest.stg_orders: BEGIN
+[0m12:07:16.279613 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:07:16.299873 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m12:07:16.301610 [debug] [Thread-1 (]: Using mariadb connection "model.dbt_quest.stg_orders"
+[0m12:07:16.301951 [debug] [Thread-1 (]: On model.dbt_quest.stg_orders: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "dbt_quest", "target_name": "dev", "node_id": "model.dbt_quest.stg_orders"} */
+
+  create view `my_dbt_db`.`stg_orders__dbt_tmp`
+  
+  
+  as
+    with source as (
+    select * from `my_dbt_db`.`raw_orders`
+),
+renamed as (
+    select
+        id as orders_id,
+        customer as orders_customer,
+        ordered_at as orders_ordered_at,
+        store_id as orders_store_id
+    from source
+)
+select * from renamed
+[0m12:07:16.313461 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m12:07:16.321619 [debug] [Thread-1 (]: Using mariadb connection "model.dbt_quest.stg_orders"
+[0m12:07:16.323065 [debug] [Thread-1 (]: On model.dbt_quest.stg_orders: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "dbt_quest", "target_name": "dev", "node_id": "model.dbt_quest.stg_orders"} */
+
+    drop view if exists `my_dbt_db`.`stg_orders` cascade
+  
+[0m12:07:16.326563 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m12:07:16.329378 [debug] [Thread-1 (]: Using mariadb connection "model.dbt_quest.stg_orders"
+[0m12:07:16.329378 [debug] [Thread-1 (]: On model.dbt_quest.stg_orders: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "dbt_quest", "target_name": "dev", "node_id": "model.dbt_quest.stg_orders"} */
+
+    rename table `my_dbt_db`.`stg_orders__dbt_tmp` to `my_dbt_db`.`stg_orders`
+  
+[0m12:07:16.340474 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m12:07:16.345008 [debug] [Thread-1 (]: On model.dbt_quest.stg_orders: COMMIT
+[0m12:07:16.345008 [debug] [Thread-1 (]: Using mariadb connection "model.dbt_quest.stg_orders"
+[0m12:07:16.345008 [debug] [Thread-1 (]: On model.dbt_quest.stg_orders: COMMIT
+[0m12:07:16.347637 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m12:07:16.353198 [debug] [Thread-1 (]: Using mariadb connection "model.dbt_quest.stg_orders"
+[0m12:07:16.357307 [debug] [Thread-1 (]: On model.dbt_quest.stg_orders: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "dbt_quest", "target_name": "dev", "node_id": "model.dbt_quest.stg_orders"} */
+drop view if exists `my_dbt_db`.`stg_orders__dbt_backup`
+[0m12:07:16.368561 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m12:07:16.372341 [debug] [Thread-1 (]: Timing info for model.dbt_quest.stg_orders (execute): 12:07:16.260696 => 12:07:16.372341
+[0m12:07:16.374730 [debug] [Thread-1 (]: On model.dbt_quest.stg_orders: Close
+[0m12:07:16.376371 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6426e263-55ce-45ba-a45e-d9b62e421881', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D8F65E7B90>]}
+[0m12:07:16.377925 [info ] [Thread-1 (]: 2 of 2 OK created sql view model my_dbt_db.stg_orders .......................... [[32mSUCCESS 0[0m in 0.13s]
+[0m12:07:16.380147 [debug] [Thread-1 (]: Finished running node model.dbt_quest.stg_orders
+[0m12:07:16.384908 [debug] [MainThread]: Using mariadb connection "master"
+[0m12:07:16.384908 [debug] [MainThread]: On master: BEGIN
+[0m12:07:16.384908 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:07:16.401854 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m12:07:16.403331 [debug] [MainThread]: On master: COMMIT
+[0m12:07:16.403331 [debug] [MainThread]: Using mariadb connection "master"
+[0m12:07:16.403331 [debug] [MainThread]: On master: COMMIT
+[0m12:07:16.403331 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m12:07:16.403331 [debug] [MainThread]: On master: Close
+[0m12:07:16.411167 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:07:16.411686 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+[0m12:07:16.411686 [debug] [MainThread]: Connection 'list_None_my_dbt_db' was properly closed.
+[0m12:07:16.411686 [debug] [MainThread]: Connection 'model.dbt_quest.stg_orders' was properly closed.
+[0m12:07:16.411686 [info ] [MainThread]: 
+[0m12:07:16.411686 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.67 seconds (0.67s).
+[0m12:07:16.416461 [debug] [MainThread]: Command end result
+[0m12:07:16.437181 [info ] [MainThread]: 
+[0m12:07:16.437181 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:07:16.437181 [info ] [MainThread]: 
+[0m12:07:16.437181 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m12:07:16.442712 [debug] [MainThread]: Command `dbt run` succeeded at 12:07:16.442712 after 12.81 seconds
+[0m12:07:16.442712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D8D2693F20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D8D24931A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D8D2493140>]}
+[0m12:07:16.442712 [debug] [MainThread]: Flushing usage events
